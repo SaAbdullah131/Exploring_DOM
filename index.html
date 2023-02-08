@@ -13,6 +13,9 @@
         #fruits-title {
             color: black;
         }
+        .important-place{
+            color:blueviolet;
+        }
     </style>
 </head>
 <body>
@@ -40,12 +43,12 @@
             </ul>
         </section>
         <section>
-            <h1>Places I like to Visit</h1>
+            <h1 id="">Places I like to Visit</h1>
             <ul>
-                <li>SundhorBan</li>
-                <li>Bandorban</li>
-                <li>SalGom</li>
-                <li>TiraBon</li>
+                <li class="important-place">SundhorBan</li>
+                <li class="important-place">Bandorban</li>
+                <li class="important-place">SalGom</li>
+                <li class="important-place">TiraBon</li>
             </ul>
         </section>
     </main>
@@ -69,6 +72,12 @@
                 console.log(h1.innerText);
             }
         // console.log("Adding js Inside the html File");
+        const fruitsTitle = document.getElementsByClassName("fruits-title");
+        fruitsTitle.innerText = "Fruits Changed By Javascipt"
+        const places = document.getElementsByClassName("important-place");
+        for(const place of places) {
+            console.log(place.innerText);
+        }
     </script>
 </body>
 </html>
