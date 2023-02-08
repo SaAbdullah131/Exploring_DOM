@@ -10,20 +10,44 @@
         li {
             color:goldenrod;
         }
+        #fruits-title {
+            color: black;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to My DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quos non provident, aut aliquid distinctio suscipit voluptatibus! Amet doloribus suscipit dignissimos delectus culpa exercitationem qui aut ipsum. Possimus, eum consequuntur.</p>
     </header>
     <main>
-        <h1>My Awesome DOM de BABA</h1> 
+        <section>
+            <h1>My Awesome DOM de BABA</h1> 
         <ul>
             <li>Jalali Set</li>
             <li>Shafayet</li>
             <li>Bonobash</li>
             <li>Dom de baba</li>
         </ul>
+        
+        </section>
+        <section>
+            <h1 id="fruits-title">I like Fruits</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Places I like to Visit</h1>
+            <ul>
+                <li>SundhorBan</li>
+                <li>Bandorban</li>
+                <li>SalGom</li>
+                <li>TiraBon</li>
+            </ul>
+        </section>
     </main>
     <!-- js file connect -->
     <script src="js/dom.js"></script>
@@ -40,7 +64,10 @@
             for(const li of liCollection) {
                 console.log(li.innerText);
             }   
-
+            const allHeading = document.getElementsByTagName('h1');
+            for(const h1 in allHeading) {
+                console.log(h1.innerText);
+            }
         // console.log("Adding js Inside the html File");
     </script>
 </body>
