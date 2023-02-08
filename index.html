@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Tour of DOM</title>
+    <style>
+        li {
+            color:goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My DOM</h1>
+    </header>
+    <main>
+        <h1>My Awesome DOM de BABA</h1> 
+        <ul>
+            <li>Jalali Set</li>
+            <li>Shafayet</li>
+            <li>Bonobash</li>
+            <li>Dom de baba</li>
+        </ul>
+    </main>
+    <!-- js file connect -->
+    <script src="js/dom.js"></script>
+    <script>
+        // const student = {
+        //     name:"Abul",
+        //     id:11,
+        //     study: function (time) {
+        //         console.log(time,"Study korteche");
+        //     }
+        // }
+        const liCollection  = document.getElementsByTagName('li');
+        // console.log(liCollection);
+            for(const li of liCollection) {
+                console.log(li.innerText);
+            }   
+
+        // console.log("Adding js Inside the html File");
+    </script>
+</body>
+</html>
