@@ -16,6 +16,9 @@
         .important-place{
             color:blueviolet;
         }
+        .fruits-container li {
+            color: turquoise;
+        }
     </style>
 </head>
 <body>
@@ -34,7 +37,7 @@
         </ul>
         
         </section>
-        <section>
+        <section class="fruits-container">
             <h1 id="fruits-title">I like Fruits</h1>
             <ul>
                 <li>Apple</li>
@@ -77,6 +80,14 @@
         const places = document.getElementsByClassName("important-place");
         for(const place of places) {
             console.log(place.innerText);
+        }
+
+        // querySelectorAll 
+        const sumLi = document.querySelectorAll(".fruits-container li");
+        console.log(sumLi);
+
+        for ( const li of sumLi) {
+            console.log(li.innerText);
         }
     </script>
 </body>
