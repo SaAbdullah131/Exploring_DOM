@@ -38,15 +38,15 @@
         
         </section>
         <section class="fruits-container">
-            <h1 id="fruits-title">I like Fruits</h1>
+            <h1 id="fruits-title" class="some-class blue-bg">I like Fruits</h1>
             <ul>
                 <li>Apple</li>
                 <li>Banana</li>
                 <li>Carrot</li>
             </ul>
         </section>
-        <section>
-            <h1 id="">Places I like to Visit</h1>
+        <section id="places-container" class="large-text">
+            <h1 id="places-title">Places I like to Visit</h1>
             <ul>
                 <li class="important-place">SundhorBan</li>
                 <li class="important-place">Bandorban</li>
@@ -76,7 +76,7 @@
             }
         // console.log("Adding js Inside the html File");
         const fruitsTitle = document.getElementsByClassName("fruits-title");
-        fruitsTitle.innerText = "Fruits Changed By Javascipt"
+        fruitsTitle.innerText = "Fruits Changed By Javascipt";
         const places = document.getElementsByClassName("important-place");
         for(const place of places) {
             console.log(place.innerText);
