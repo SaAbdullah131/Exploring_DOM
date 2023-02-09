@@ -1,0 +1,1 @@
+console.log("This is seprate js file");
