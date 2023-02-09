@@ -7,6 +7,40 @@
     <title>Js DOM Summary</title>
 </head>
 <body>
-    
+    <h1>Final DOM Event Handler</h1>
+    <h3 id="handler-status">Default Text</h3>
+    <h4 id="hello-dom">Hello DoM</h4>
+    <p id="update-text">Default Input Text</p>
+    <input id="input-field" type="text">
+    <button id="btn-update">Update</button>
+    <br>
+    <br>
+    <button onclick="handleOnclick()">Handle Event by Add Onclick Function</button>
+    <button id="event-listener">Handle event By addEventListener</button>
+    <button onclick="clickMarsos()">Hello Button</button>
+    <script>
+        function handleOnclick() {
+            const handlerStatus = document.getElementById("handler-status");
+            handlerStatus.innerText = "Handle By Function by Onclick Attribute";
+        }
+        // option 2
+        document.getElementById('event-listener').addEventListener('click',function() {
+            const handlerStatus = document.getElementById("handler-status");
+            handlerStatus.innerText = "Text Updated By add Events Listener Button";
+        })
+        function clickMarsos() {
+            const helloDomMia = document.getElementById("hello-dom");
+            helloDomMia.innerText = "Hello DOM Mia Shafayerter Bonobash";
+        }
+
+        // option 2
+        document.getElementById("btn-update").addEventListener('click',function(){
+           const inputField = document.getElementById("input-field");
+          const inputText = inputField.value;
+            const inputTextUpdate = document.getElementById("update-text");
+            inputTextUpdate.innerText = inputText;
+            inputField.value= '';
+        })
+    </script>
 </body>
 </html>
