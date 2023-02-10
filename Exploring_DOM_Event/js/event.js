@@ -40,3 +40,13 @@ const makeButtonOrange = document.getElementById("make-orange");
 makeButtonOrange.addEventListener('click',function(){
     document.body.style.backgroundColor = 'orange';
 })
+
+// comment posted
+const  postCommentBtn=document.getElementById("post-comment-bt");
+postCommentBtn.addEventListener('click',function() {
+ const textArea = document.getElementById("comment-area");
+ const textAreasText = textArea.value;
+console.log(textAreasText);
+ const updateText = document.getElementById("posted");
+ updateText = textAreasText;
+})
