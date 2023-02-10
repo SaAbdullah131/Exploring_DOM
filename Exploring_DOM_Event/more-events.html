@@ -9,8 +9,29 @@
 <body>
     <h1>Explore More Events</h1>
     <button id="btn-more">Events</button>
+    <input type="text" name="" id="text-field">
     <script>
-        document.getElementById("btn-more").addEventListener("click",function(){
+        // for input field
+        // document.getElementById("text-field").addEventListener(("focus"),function(){
+        //     console.log("Events Triggered inside the input field");
+        // })
+        // document.getElementById("text-field").addEventListener(('blur'),function(){
+        //     console.log("Events Triggered inside the input field blur");
+        // })
+        // document.getElementById("text-field").addEventListener(('keydown'),function(event){
+        //     console.log(event.target.value);
+        //     // console.log("Events Triggered inside the input field blur");
+        // })
+        // document.getElementById("text-field").addEventListener(('keypress'),function(event){
+        //     console.log(event.target.value);
+        //     // console.log("Events Triggered inside the input field blur");
+        // })
+        document.getElementById("text-field").addEventListener(('keyup'),function(event){
+            console.log(event.target.value);
+        //     // console.log("Events Triggered inside the input field blur");
+         })
+        // for button
+        document.getElementById("btn-more").addEventListener("mousemove",function(){
         console.log("Event Triggerd");
         })
     </script>
